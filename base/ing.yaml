@@ -14,7 +14,7 @@ spec:
         pathType: ImplementationSpecific
         backend:
           service:
-           name: devops-toolkit
-           port:
-             number: 80
+            name: devops-toolkit
+            port:
+              number: 80
     host: devopstoolkitseries.com
