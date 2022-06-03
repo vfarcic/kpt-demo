@@ -1,0 +1,18 @@
+apiVersion: kpt.dev/v1
+kind: Kptfile
+metadata:
+  name: devops-toolkit
+  labels:
+    something: else
+    app: devops-toolkit
+info:
+  emails:
+  - viktor@farcic.com
+  description: This is an example devops-toolkit package
+pipeline:
+  mutators:
+  - image: set-labels:v0.1.5
+    configMap:
+      app: devops-toolkit
+  validators:
+  - image: kubeval:v0.3
