@@ -3,9 +3,8 @@ kind: Kptfile
 metadata:
   name: devops-toolkit
   labels:
-    something: else
     app: devops-toolkit
-  namespace: a-team
+    type: silly
 info:
   emails:
   - viktor@farcic.com
@@ -15,5 +14,6 @@ pipeline:
   - image: set-labels:v0.1.5
     configMap:
       app: devops-toolkit
+      type: silly
   validators:
   - image: kubeval:v0.3

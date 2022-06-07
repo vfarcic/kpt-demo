@@ -4,6 +4,7 @@ metadata:
   name: devops-toolkit
   labels:
     app: devops-toolkit
+    type: silly
   namespace: a-team
 spec:
   template:
@@ -31,6 +32,8 @@ spec:
     metadata:
       labels:
         app: devops-toolkit
+        type: silly
   selector:
     matchLabels:
       app: devops-toolkit
+      type: silly

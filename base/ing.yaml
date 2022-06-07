@@ -6,6 +6,7 @@ metadata:
     ingress.kubernetes.io/ssl-redirect: "false"
   labels:
     app: devops-toolkit
+    type: silly
   namespace: a-team
 spec:
   rules:
