@@ -1,9 +1,9 @@
----
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: devops-toolkit
+  labels:
+    app: devops-toolkit
 spec:
   template:
     spec:
@@ -27,3 +27,9 @@ spec:
           requests:
             cpu: 250m
             memory: 256Mi
+    metadata:
+      labels:
+        app: devops-toolkit
+  selector:
+    matchLabels:
+      app: devops-toolkit
