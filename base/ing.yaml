@@ -1,13 +1,12 @@
+---
+
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: devops-toolkit
+  namespace: default
   annotations:
     ingress.kubernetes.io/ssl-redirect: "false"
-  labels:
-    app: devops-toolkit
-    type: silly
-  namespace: a-team
 spec:
   rules:
   - http:

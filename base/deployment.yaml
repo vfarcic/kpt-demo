@@ -1,11 +1,10 @@
+---
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: devops-toolkit
-  labels:
-    app: devops-toolkit
-    type: silly
-  namespace: a-team
+  namespace: default
 spec:
   template:
     spec:
@@ -29,11 +28,3 @@ spec:
           requests:
             cpu: 250m
             memory: 256Mi
-    metadata:
-      labels:
-        app: devops-toolkit
-        type: silly
-  selector:
-    matchLabels:
-      app: devops-toolkit
-      type: silly
