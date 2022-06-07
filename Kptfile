@@ -5,6 +5,7 @@ metadata:
   labels:
     something: else
     app: devops-toolkit
+  namespace: a-team
 info:
   emails:
   - viktor@farcic.com

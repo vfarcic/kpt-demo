@@ -4,6 +4,7 @@ metadata:
   name: devops-toolkit
   labels:
     app: devops-toolkit
+  namespace: a-team
 spec:
   template:
     spec:
